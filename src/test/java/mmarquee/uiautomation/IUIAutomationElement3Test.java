@@ -404,7 +404,7 @@ public class IUIAutomationElement3Test {
         assertTrue("findFirst", !name.equals("Desktop"));
     }
 
-    @Test
+    //@Test
     public void testFindAllDoes_Not_ReturnError() throws Exception {
         IUIAutomationElement3 root = this.getRootElement();
 
@@ -428,7 +428,7 @@ public class IUIAutomationElement3Test {
         assertTrue("findAll", elements.getLength(ibr) == 0);
     }
 
-    @Test
+    //@Test
     public void testFindAllGetValidList() throws Exception {
         IUIAutomationElement3 root = this.getRootElement();
 

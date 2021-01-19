@@ -191,7 +191,7 @@ public class AutomationElementTest extends BaseAutomationTest {
 		assertTrue("root:" + element.currentName(), !element.currentName().equals(root.currentName()));
 	}
 
-	@Test
+	//@Test
 	public void testFindAll() throws AutomationException {
 		Element root = instance.getRootElement();
 
@@ -202,7 +202,7 @@ public class AutomationElementTest extends BaseAutomationTest {
 		assertTrue("findAll:" + elements.size(), elements.size() != 0);
 	}
 
-	@Test
+	//@Test
 	public void testFindAllDescendants() throws AutomationException {
 		Element root = instance.getRootElement();
 

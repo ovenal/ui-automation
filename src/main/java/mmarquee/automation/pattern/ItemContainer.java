@@ -90,12 +90,13 @@ public class ItemContainer extends BasePattern {
      * @param startAfter Element to start after
      * @param propertyId The property
      * @param value The value of the property
+     * @throws AutomationException Something went wrong getting the pattern
      * @return The found element.
      */
     public Element findItemByProperty(final Pointer startAfter,
                                                 final int propertyId,
                                                 final Variant.VARIANT.ByValue value)
-            throws AutomationException {
+            throws AutomationException  {
         PointerByReference pbr = new PointerByReference();
 
         final int res = this.getPattern().findItemByProperty(startAfter, propertyId, value, pbr);

@@ -174,7 +174,7 @@ public final class List
      * @throws AutomationException Something has gone wrong.
      */
     public java.util.List<ListItem> getSelectedItems()
-            throws AutomationException, PatternNotFoundException {
+            throws AutomationException {
         java.util.List<Element> collection = getCurrentSelection();
 
         java.util.List<ListItem> list = new ArrayList<>();
